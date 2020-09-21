@@ -1,0 +1,67 @@
+@charset "UTF-8";
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  marigin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sofia-pro, sans-serif, "游ゴシック体", YuGothic;
+  width: 100%;
+}
+
+.header-main {
+  height: 80px;
+  width: 100%;
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-main > .header-logo {
+  width: 38px;
+  height: 38px;
+}
+
+.header-main > .header-logo img {
+  width: 38px;
+  height: 38px;
+}
+
+.header-main > nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-main > nav > ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-main > nav > ul li {
+  padding: 28px 0;
+  margin: 0 14px;
+}
+
+.header-main > nav > .menu-icon img {
+  width: 24px;
+  height: 24px;
+  padding: 28px 0;
+  margin-left: 35px;
+}
+/*# sourceMappingURL=home.css.map */
