@@ -1,16 +1,30 @@
-html
-  box-sizing: border-box
-  height: 100%
-  marigin: 0
-  padding: 0
-
 body
   font-family: sofia-pro, sans-serif, "游ゴシック体", YuGothic
-  width: 100%
+  width: auto
+  height: 100%
+  margin:  0px
+
+.common-button
+  display: block
+  width: 240px
+  font-family: sofia-pro, sans-serif
+  letter-spacing: 0.05em
+  line-height: 48px
+  text-align: center
+  font-weight: 500
+  font-size: 12px
+  margin: 0 auto
+  margin-top: 70px
+  text-align: center
+.button-shape
+  border-color: #000
+  background-color: #000
+  color: #fff
 
 .header-main
+  box-sizing: border-box
   height: 80px
-  width: 100%
+  width: auto
   padding: 0 40px
   display: flex
   align-items: center
@@ -27,13 +41,63 @@ body
     & > ul
       list-style: none
       display: flex
+      margin: 0px
       li
         padding: 28px 0
         margin: 0 14px
     & > .menu-icon
       img
-        width: 24px
-        height: 24px
         padding: 28px 0
         margin-left: 35px
 
+
+.top-image-content
+  background-image: url(../images/main-image.png)
+  height: 753px
+  // height: calc(100vh - 120px)
+  width: auto
+  background-size: cover
+  background-position: center center
+  margin: 0 40px
+  .main-catch-area
+    // padding-top: 70px
+    text-align: center
+    color: #fff
+    font-family: sofia-pro, sans-serif
+    & > .main-catch
+      margin: 0px
+      padding-top: 280px
+      font-weight: 400
+      letter-spacing: 0.05em
+      font-size: 70px
+      line-height: 1.23
+    & > .sub-catch
+      font-family: "游ゴシック体"
+      font-weight: 300
+      padding: 22px 0 130px 0
+    & > .mini-text
+      font-size: 14px
+
+
+.main-masseage-area
+  text-align: center
+  padding: 120px 0
+  margin: 0 40px
+  font-family: "游ゴシック体"
+  .section-title
+    font-size: 18px
+    font-family: sofia-pro, sans-serif
+  .jp-main-catch
+    font-size: 42px
+    line-height: 1.3
+    margin-top: 30px
+  .jp-main-catch:before
+    content: "「"
+    margin-right: 25px
+  .jp-main-catch:after
+    content: "」"
+    margin-left: 25px
+  .main-catch-text
+    line-height: 2.2
+    font-size: 18px
+    margin-top: 60px
