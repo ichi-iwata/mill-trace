@@ -1,4 +1,9 @@
 @charset "UTF-8";
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sofia-pro, sans-serif, "游ゴシック体", YuGothic;
   width: auto;
@@ -60,6 +65,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  font-family: sofia-pro;
 }
 
 .header-main > nav > ul {
@@ -155,20 +164,26 @@ body {
   text-align: center;
 }
 
-.identity-contents .sub-main-catch {
+.identity-contents .identity-contents-inner {
+  max-width: 1060px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.identity-contents .identity-contents-inner .sub-main-catch {
   font-size: 40px;
   font-family: sofia-pro, sans-serif;
   font-weight: 600;
   letter-spacing: 0.05em;
 }
 
-.identity-contents .sub-section-title {
+.identity-contents .identity-contents-inner .sub-section-title {
   font-size: 12px;
   line-height: 2;
   margin-bottom: 70px;
 }
 
-.identity-contents .identity-image-area {
+.identity-contents .identity-contents-inner .identity-image-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,43 +194,461 @@ body {
   font-family: "游ゴシック体";
 }
 
-.identity-contents .identity-image-area .ethical-area {
-  width: calc(50% - 20px);
-  height: auto;
-  padding: 61px 73px;
+.identity-contents .identity-contents-inner .identity-image-area .ethical-area {
   background-image: url(../images/identity-ethical-media.jpg);
   background-position: center center;
   background-size: cover;
+  text-align: center;
 }
 
-.identity-contents .identity-image-area .maker-area {
-  width: calc(50% - 20px);
-  height: auto;
-  padding: 61px 73px;
+.identity-contents .identity-contents-inner .identity-image-area .maker-area {
   background-image: url(../images/identity-craft-media.jpg);
   background-position: center center;
   background-size: cover;
 }
 
-.identity-contents .identity-sub-catch {
-  font-size: 24px;
-  font-weight: 700;
-  margin: 25px;
+.identity-contents .identity-contents-inner .identity-image-area .identity-common-area {
+  text-align: center;
+  width: calc(50% - 20px);
+  max-height: 490px;
+  padding: 61px 73px;
 }
 
-.identity-contents .identity-sub-text {
+.identity-contents .identity-contents-inner .identity-sub-catch {
+  font-size: 24px;
+  margin: 25px 0;
+  white-space: nowrap;
+}
+
+.identity-contents .identity-contents-inner .identity-sub-text {
   font-size: 14px;
   text-align: left;
   line-height: 1.8;
   font-weight: lighter;
-  letter-spacing: 0.15em;
 }
 
-.identity-contents .identity-detail-button {
+.identity-contents .identity-contents-inner .identity-detail-button {
   margin-top: 42px;
   font-family: sofia-pro, sans-serif;
   font-size: 12px;
   letter-spacing: 0.05em;
   font-weight: 600;
+}
+
+.business-contents {
+  padding: 120px 0;
+  margin: 0 40px;
+}
+
+.business-contents .business-contents-inner {
+  max-width: 1060px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.business-contents .business-contents-inner .business-contents-text {
+  text-align: center;
+}
+
+.business-contents .business-contents-inner .business-contents-text .sub-main-catch-large {
+  font-family: sofia-pro, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 22px;
+}
+
+.business-contents .business-contents-inner .business-contents-text .jp-sub-catch {
+  font-size: 36px;
+  line-height: 1.38;
+  font-weight: 700;
+  margin: 25px 0 70px;
+}
+
+.business-contents .business-contents-inner .business-images-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "游ゴシック体";
+}
+
+.business-contents .business-contents-inner .business-images-area .business-common-area {
+  width: calc(50% - 20px);
+}
+
+.business-contents .business-contents-inner .business-images-area .business-common-area > img {
+  max-width: 490px;
+}
+
+.business-contents .business-contents-inner .business-images-area .business-common-area > .business-common-title {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.business-contents .business-contents-inner .business-images-area .business-common-area > .business-common-text {
+  margin-top: 0.5em;
+}
+
+.magazin-contents {
+  padding: 96px 0;
+  margin: 0 40px;
+  background-color: #f8f8f8;
+}
+
+.magazin-contents .magazin-contents-inner {
+  max-width: 1060px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.magazin-contents .magazin-contents-inner .magazin-contents-text-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.magazin-contents .magazin-contents-inner .magazin-contents-text-area .sub-main-catch {
+  font-size: 40px;
+  font-family: sofia-pro, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding-right: 40px;
+}
+
+.magazin-contents .magazin-contents-inner .magazin-contents-text-area .sub-main-text-area {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+  font-family: sofia-pro, sans-serif;
+}
+
+.magazin-contents .magazin-contents-inner .magazin-image-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.magazin-contents .magazin-contents-inner .magazin-image-area .magazin-image-main {
+  width: 690px;
+  padding: 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 -30px;
+}
+
+.magazin-contents .magazin-contents-inner .magazin-image-area .magazin-image-main > img {
+  margin-bottom: 24px;
+}
+
+.magazin-contents .magazin-contents-inner .magazin-image-area .magazin-image-main .sub-text-gray-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: sofia-pro, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.magazin-contents .magazin-contents-inner .magazin-image-area .magazin-image-main .sub-text-gray-main .gray-block {
+  display: inline-block;
+  margin: 0 16px;
+  vertical-align: top;
+}
+
+.magazin-contents .magazin-contents-inner .magazin-image-area .magazin-image-common .sub-text-gray {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: sofia-pro, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+.magazin-contents .magazin-contents-inner .magazin-image-area .magazin-image-common .sub-text-gray .gray-block {
+  display: inline-block;
+  margin: 0 16px;
+  vertical-align: top;
+}
+
+.magazin-contents .magazin-contents-inner .magazin-image-area .magazin-image-sub {
+  padding-left: 60px;
+}
+
+.magazin-contents .magazin-contents-inner .magazin-image-area .magazin-image-sub img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.magazin-contents .magazin-contents-inner .magazin-image-area .magazin-image-sub .magazin-content-last {
+  margin-top: 30px;
+}
+
+.news-content {
+  padding: 120px 0;
+  margin: 0 40px;
+}
+
+.news-content .news-contens-area {
+  margin: 0 30px;
+  padding: 0 20px;
+}
+
+.news-content .news-contens-area .main-mews-title-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.news-content .news-contens-area .main-mews-title-area .news-main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.news-content .news-contens-area .main-mews-title-area .news-main-header .sub-main-catch {
+  font-size: 40px;
+  font-family: sofia-pro, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding-right: 40px;
+}
+
+.news-content .news-contens-area .main-mews-title-area .news-main-header .sub-test {
+  font-family: sofia-pro, sans-serif;
+  font-size: 12px;
+}
+
+.news-content .news-contens-area .main-mews-title-area .news-detail-button {
+  font-family: sofia-pro, sans-serif;
+  font-size: 12px;
+  padding-right: -20px;
+}
+
+.news-content .news-contens-area .news-image-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -16px;
+}
+
+.news-content .news-contens-area .news-image-content .image-content-area {
+  width: calc(100% / 3);
+  padding: 0 16px;
+}
+
+.news-content .news-contens-area .news-image-content .image-content-area > img {
+  max-width: 329px;
+  margin-bottom: 20px;
+}
+
+.news-content .news-contens-area .news-image-content .image-content-area .sub-text-gray {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: sofia-pro, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+.news-content .news-contens-area .news-image-content .image-content-area .sub-text-gray .gray-block {
+  display: inline-block;
+  margin: 0 16px;
+  vertical-align: top;
+}
+
+.news-content .news-contens-area .news-image-content .image-content-area .news-detail-text {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: "游ゴシック体";
+}
+
+.recruit-content {
+  margin: 0 40px;
+  padding-bottom: 120px;
+}
+
+.recruit-content .recruit-content-wrap {
+  margin: 0 30px;
+  padding: 0 20px;
+  max-width: 1060px;
+  overflow: hidden;
+  position: relative;
+}
+
+.recruit-content .recruit-content-wrap .recruit-content-IMAGE {
+  position: relative;
+  overflow: hidden;
+}
+
+.recruit-content .recruit-content-wrap .recruit-content-text {
+  color: #fff;
+  position: absolute;
+  top: 21%;
+  left: 32%;
+  text-align: center;
+  padding: 0 20px;
+  opacity: 0.8;
+  letter-spacing: 0.05em;
+}
+
+.recruit-content .recruit-content-wrap .recruit-content-text .recruit-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: sofia-pro, sans-serif;
+}
+
+.recruit-content .recruit-content-wrap .recruit-content-text .recruit-text {
+  font-family: "游ゴシック体";
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.recruit-content .recruit-content-wrap .recruit-content-text .recruit-button {
+  width: 240px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  font-size: 12px;
+  line-height: 48px;
+  margin: 40px auto 0;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  font-family: sofia-pro, sans-serif;
+}
+
+.footer {
+  margin-top: 70px;
+}
+
+.footer .shop-image-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .shop-image-area .shop-images {
+  width: calc(100% / 3);
+}
+
+.footer .shop-image-area .shop-images .shop-logo {
+  text-align: center;
+  margin-top: 52px;
+}
+
+.footer .shop-image-area .shop-images .shop-logo .shop-text {
+  color: #ffffff;
+  margin-top: 9px;
+  font-size: 12px;
+}
+
+.footer .shop-image-area .shop-images-wa {
+  background-image: url("../images/wa.png");
+  background-size: contain;
+  height: 179px;
+}
+
+.footer .shop-image-area .shop-images-kindest {
+  background-image: url("../images/kindest.png");
+  background-size: contain;
+  height: 179px;
+}
+
+.footer .shop-image-area .shop-images-kindest .shop-logo {
+  margin-top: 40px;
+}
+
+.footer .shop-image-area .shop-images-wantedly {
+  background-image: url("../images/wantedly.png");
+  background-size: contain;
+  height: auto;
+}
+
+.footer .footer-navi-area {
+  padding: 0 20px;
+  background-color: #000000;
+  text-align: center;
+}
+
+.footer .footer-navi-area .footer-logo-area {
+  padding: 100px 40px 50px;
+  text-align: center;
+}
+
+.footer .footer-navi-area .footer-navi > nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.footer .footer-navi-area .footer-navi > nav > ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.footer .footer-navi-area .footer-navi > nav > ul li {
+  margin: 0 20px;
+  font-size: 14px;
+  font-weight: 200;
+  font-family: sofia-pro, sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.footer .footer-navi-area .privacy-text {
+  margin: 30px 10px 0;
+  color: #999;
+  font-size: 12px;
+}
+
+.footer .footer-navi-area .copywrite-text {
+  padding: 20px 0px 90px;
+  color: #999;
+  font-size: 12px;
 }
 /*# sourceMappingURL=home.css.map */

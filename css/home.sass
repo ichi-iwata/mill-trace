@@ -1,8 +1,12 @@
+html
+  margin: 0
+  padding: 0
+
 body
   font-family: sofia-pro, sans-serif, "游ゴシック体", YuGothic
   width: auto
   height: 100%
-  margin:  0px
+  margin: 0px
 
 .common-button
   display: block
@@ -38,6 +42,10 @@ body
   & > nav
     display: flex
     align-items: center
+    font-size: 14px
+    letter-spacing: 0.05em
+    font-weight: 500
+    font-family: sofia-pro
     & > ul
       list-style: none
       display: flex
@@ -49,7 +57,6 @@ body
       img
         padding: 28px 0
         margin-left: 35px
-
 
 .top-image-content
   background-image: url(../images/main-image.png)
@@ -77,7 +84,6 @@ body
       padding: 22px 0 130px 0
     & > .mini-text
       font-size: 14px
-
 
 .main-masseage-area
   text-align: center
@@ -107,51 +113,314 @@ body
   margin: 0 40px
   background-color: #f8f8f8
   text-align: center
-  .sub-main-catch
-    font-size: 40px
-    font-family: sofia-pro, sans-serif
-    font-weight: 600
-    letter-spacing: 0.05em
-  .sub-section-title
-    font-size: 12px
-    line-height: 2
-    margin-bottom: 70px
-  .identity-image-area
+  .identity-contents-inner
+    max-width: 1060px
+    padding: 0 20px
+    margin: 0 auto
+    .sub-main-catch
+      font-size: 40px
+      font-family: sofia-pro, sans-serif
+      font-weight: 600
+      letter-spacing: 0.05em
+      text-transform: uppercase
+    .sub-section-title
+      font-size: 12px
+      line-height: 2
+      margin-bottom: 70px
+    .identity-image-area
+      display: flex
+      justify-content: space-between
+      color: #FFF
+      font-family: "游ゴシック体"
+      .ethical-area
+        background-image: url(../images/identity-ethical-media.jpg)
+        background-position: center center
+        background-size: cover
+        text-align: center
+      .maker-area
+        background-image: url(../images/identity-craft-media.jpg)
+        background-position: center center
+        background-size: cover
+      .identity-common-area
+        text-align: center
+        width: calc(50% - 20px)
+        max-height: 490px
+        padding: 61px 73px
+
+    .identity-sub-catch
+      font-size: 24px
+      margin: 25px 0
+      white-space: nowrap
+
+    .identity-sub-text
+      font-size: 14px
+      text-align: left
+      line-height: 1.8
+      font-weight: lighter
+
+    .identity-detail-button
+      margin-top: 42px
+      font-family: sofia-pro, sans-serif
+      font-size: 12px
+      letter-spacing: 0.05em
+      font-weight: 600
+
+.business-contents
+  padding: 120px 0
+  margin: 0 40px
+  .business-contents-inner
+    max-width: 1060px
+    padding: 0 20px
+    margin: 0 auto
+    .business-contents-text
+      text-align: center
+      .sub-main-catch-large
+        font-family: sofia-pro, sans-serif
+        font-weight: 600
+        letter-spacing: 0.05em
+        font-size: 22px
+      .jp-sub-catch
+        font-size: 36px
+        line-height: 1.38
+        font-weight: 700
+        margin: 25px 0 70px
+    .business-images-area
+      display: flex
+      justify-content: space-between
+      font-family: "游ゴシック体"
+      .business-common-area
+        width: calc(50% - 20px)
+        & > img
+          max-width: 490px
+        & > .business-common-title
+          margin-top: 30px
+          font-size: 22px
+          font-weight: 700
+        & > .business-common-text
+          margin-top: 0.5em
+
+.magazin-contents
+  padding: 96px 0
+  margin: 0 40px
+  background-color: #f8f8f8
+  .magazin-contents-inner
+    max-width: 1060px
+    padding: 0 20px
+    margin: 0 auto
+    .magazin-contents-text-area
+      display: flex
+      align-items: center
+      margin-bottom: 40px
+      .sub-main-catch
+        font-size: 40px
+        font-family: sofia-pro, sans-serif
+        font-weight: 600
+        letter-spacing: 0.05em
+        padding-right: 40px
+      .sub-main-text-area
+        width: 100%
+        display: flex
+        justify-content: space-between
+        font-size: 12px
+        font-family: sofia-pro, sans-serif
+
+    .magazin-image-area
+      display: flex
+      justify-content: space-between
+      box-sizing: border-box
+      .magazin-image-main
+        width: 690px
+        padding: 0 30px
+        box-sizing: border-box
+        margin: 0 -30px
+        & > img
+          margin-bottom: 24px
+        .sub-text-gray-main
+          display: flex
+          font-family: sofia-pro, sans-serif
+          font-weight: 600
+          letter-spacing: 0.05
+          font-size: 12px
+          color: #999
+          margin-bottom: 10px
+          .gray-block
+            display: inline-block
+            margin: 0 16px
+            vertical-align: top
+
+      .magazin-image-common
+        .sub-text-gray
+          display: flex
+          font-family: sofia-pro, sans-serif
+          font-weight: 600
+          letter-spacing: 0.05
+          font-size: 12px
+          color: #999
+          margin-bottom: 6px
+          .gray-block
+            display: inline-block
+            margin: 0 16px
+            vertical-align: top
+      .magazin-image-sub
+        padding-left: 60px
+        img
+          width: 100%
+          margin-bottom: 16px
+        .magazin-content-last
+          margin-top: 30px
+
+.news-content
+  padding: 120px 0
+  margin: 0 40px
+  .news-contens-area
+    margin: 0 30px
+    padding: 0 20px
+    .main-mews-title-area
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 40px
+      .news-main-header
+        display: flex
+        align-items: center
+        .sub-main-catch
+          font-size: 40px
+          font-family: sofia-pro, sans-serif
+          font-weight: 600
+          letter-spacing: 0.05em
+          padding-right: 40px
+        .sub-test
+          font-family: sofia-pro, sans-serif
+          font-size: 12px
+      .news-detail-button
+        font-family: sofia-pro, sans-serif
+        font-size: 12px
+        padding-right: -20px
+    .news-image-content
+      display: flex
+      margin: 0 -16px
+      .image-content-area
+        width: calc(100% / 3)
+        padding: 0 16px
+        & > img
+          max-width: 329px
+          margin-bottom: 20px
+        .sub-text-gray
+          display: flex
+          font-family: sofia-pro, sans-serif
+          font-weight: 600
+          letter-spacing: 0.05
+          font-size: 12px
+          color: #999
+          margin-bottom: 6px
+          .gray-block
+            display: inline-block
+            margin: 0 16px
+            vertical-align: top
+        .news-detail-text
+          margin-top: 10px
+          font-size: 16px
+          font-family: "游ゴシック体"
+
+.recruit-content
+  margin: 0 40px
+  padding-bottom: 120px
+  .recruit-content-wrap
+    margin: 0 30px
+    padding: 0 20px
+    max-width: 1060px
+    overflow: hidden
+    position: relative
+    .recruit-content-IMAGE
+      position: relative
+      overflow: hidden
+    .recruit-content-text
+      color: #fff
+      position: absolute
+      top: 21%
+      left: 32%
+      text-align: center
+      padding: 0 20px
+      opacity: 0.8
+      letter-spacing: 0.05em
+      .recruit-title
+        font-size: 40px
+        margin-bottom: 20px
+        font-weight: 600
+        font-family: sofia-pro, sans-serif
+      .recruit-text
+        font-family: "游ゴシック体"
+        line-height: 1.7
+        font-size: 14px
+      .recruit-button
+        width: 240px
+        height: 50px
+        border: 1px solid #ffffff
+        font-size: 12px
+        line-height: 48px
+        margin: 40px auto 0
+        text-align: center
+        font-weight: 400
+        letter-spacing: 0.05em
+        font-family: sofia-pro, sans-serif
+
+.footer
+  margin-top: 70px
+  .shop-image-area
     display: flex
-    justify-content: space-between
-    color: #FFF
-    font-family: "游ゴシック体"
-    .ethical-area
-      width: calc(50% - 20px)
+    .shop-images
+      width: calc(100% / 3)
+      .shop-logo
+        text-align: center
+        margin-top: 52px
+        .shop-text
+          color: #ffffff
+          margin-top: 9px
+          font-size: 12px
+
+    .shop-images-wa
+      background-image: url("../images/wa.png")
+      background-size: contain
+      height: 179px
+    .shop-images-kindest
+      background-image: url("../images/kindest.png")
+      background-size: contain
+      height: 179px
+      .shop-logo
+        margin-top: 40px
+    .shop-images-wantedly
+      background-image: url("../images/wantedly.png")
+      background-size: contain
       height: auto
-      padding: 61px 73px
-      background-image: url(../images/identity-ethical-media.jpg)
-      background-position: center center
-      background-size: cover
 
-    .maker-area
-      width: calc(50% - 20px)
-      height: auto
-      padding: 61px 73px
-      background-image: url(../images/identity-craft-media.jpg)
-      background-position: center center
-      background-size: cover
-
-  .identity-sub-catch
-    font-size: 24px
-    font-weight: 700
-    margin: 25px
-
-  .identity-sub-text
-    font-size: 14px
-    text-align: left
-    line-height: 1.8
-    font-weight: lighter
-    letter-spacing: 0.15em
-
-  .identity-detail-button
-    margin-top: 42px
-    font-family: sofia-pro, sans-serif
-    font-size: 12px
-    letter-spacing: 0.05em
-    font-weight: 600
+  .footer-navi-area
+    padding: 0 20px
+    background-color: #000000
+    text-align: center
+    .footer-logo-area
+      padding: 100px 40px 50px
+      text-align: center
+    .footer-navi
+      & > nav
+        display: flex
+        align-items: center
+        justify-content: center
+        color: white
+        & > ul
+          list-style: none
+          display: flex
+          margin-bottom: 10px
+          li
+            margin: 0 20px
+            font-size: 14px
+            font-weight: 200
+            font-family: sofia-pro, sans-serif
+            letter-spacing: 0.05em
+    .privacy-text
+      margin: 30px 10px 0
+      color: #999
+      font-size: 12px
+    .copywrite-text
+      padding: 20px 0px 90px
+      color: #999
+      font-size: 12px
