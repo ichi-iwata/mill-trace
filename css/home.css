@@ -98,22 +98,32 @@ body {
   margin-left: 35px;
 }
 
-.top-image-content {
-  background-image: url(../images/main-image.png);
+.top-main-image-area {
   height: calc(100vh - 120px);
-  width: auto;
-  background-size: cover;
-  background-position: center center;
   margin: 0 40px;
+  position: relative;
+  margin-top: 80px;
 }
 
-.top-image-content .main-catch-area {
+.top-main-image-area .top-image-content {
+  background-image: url(../images/main-image.png);
+  height: calc(100vh - 120px);
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.top-main-image-area .top-image-content .main-catch-area {
   text-align: center;
   color: #fff;
   font-family: sofia-pro, sans-serif;
 }
 
-.top-image-content .main-catch-area > .main-catch {
+.top-main-image-area .top-image-content .main-catch-area > .main-catch {
   margin: 0px;
   padding-top: 280px;
   font-weight: 400;
@@ -122,13 +132,13 @@ body {
   line-height: 1.23;
 }
 
-.top-image-content .main-catch-area > .sub-catch {
+.top-main-image-area .top-image-content .main-catch-area > .sub-catch {
   font-family: "游ゴシック体";
   font-weight: 300;
   padding: 22px 0 130px 0;
 }
 
-.top-image-content .main-catch-area > .mini-text {
+.top-main-image-area .top-image-content .main-catch-area > .mini-text {
   font-size: 14px;
 }
 

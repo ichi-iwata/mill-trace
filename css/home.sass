@@ -65,32 +65,39 @@ body
           padding: 28px 0
           margin-left: 35px
 
-
-.top-image-content
-  background-image: url(../images/main-image.png)
+.top-main-image-area
   height: calc(100vh - 120px)
-  width: auto
-  background-size: cover
-  background-position: center center
   margin: 0 40px
-  .main-catch-area
-    // padding-top: 70px
-    text-align: center
-    color: #fff
-    font-family: sofia-pro, sans-serif
-    & > .main-catch
-      margin: 0px
-      padding-top: 280px
-      font-weight: 400
-      letter-spacing: 0.05em
-      font-size: 70px
-      line-height: 1.23
-    & > .sub-catch
-      font-family: "游ゴシック体"
-      font-weight: 300
-      padding: 22px 0 130px 0
-    & > .mini-text
-      font-size: 14px
+  position: relative
+  margin-top: 80px
+  .top-image-content
+    background-image: url(../images/main-image.png)
+    height: calc(100vh - 120px)
+    width: 100%
+    background-size: cover
+    background-position: center center
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    .main-catch-area
+      // padding-top: 70px
+      text-align: center
+      color: #fff
+      font-family: sofia-pro, sans-serif
+      & > .main-catch
+        margin: 0px
+        padding-top: 280px
+        font-weight: 400
+        letter-spacing: 0.05em
+        font-size: 70px
+        line-height: 1.23
+      & > .sub-catch
+        font-family: "游ゴシック体"
+        font-weight: 300
+        padding: 22px 0 130px 0
+      & > .mini-text
+        font-size: 14px
 
 .main-masseage-area
   text-align: center
