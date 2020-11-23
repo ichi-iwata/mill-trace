@@ -100,7 +100,7 @@ body {
 
 .top-image-content {
   background-image: url(../images/main-image.png);
-  height: 753px;
+  height: calc(100vh - 120px);
   width: auto;
   background-size: cover;
   background-position: center center;
